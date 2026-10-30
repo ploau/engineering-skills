@@ -1,0 +1,13 @@
+{
+  "name": "engineering-skills",
+  "displayName": "Engineering Skills",
+  "description": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
+  "version": "0.1.0",
+  "author": {
+    "name": "engineering-skills"
+  },
+  "keywords": [
+    "skills"
+  ],
+  "skills": "./skills/"
+}

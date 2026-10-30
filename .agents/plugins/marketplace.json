@@ -1,0 +1,20 @@
+{
+  "name": "engineering-skills-dev",
+  "interface": {
+    "displayName": "Engineering Skills Dev"
+  },
+  "plugins": [
+    {
+      "name": "engineering-skills",
+      "source": {
+        "source": "url",
+        "url": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

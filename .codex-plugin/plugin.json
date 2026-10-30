@@ -1,0 +1,24 @@
+{
+  "name": "engineering-skills",
+  "version": "0.1.0",
+  "description": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
+  "author": {
+    "name": "engineering-skills"
+  },
+  "keywords": [
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Engineering Skills",
+    "shortDescription": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
+    "longDescription": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
+    "developerName": "engineering-skills",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "engineering-skills",
+  "version": "0.1.0",
+  "description": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
+  "keywords": [
+    "skills"
+  ]
+}
