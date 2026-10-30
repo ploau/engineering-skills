@@ -13,3 +13,4 @@ Guia curto deste repositório. Não é uma segunda especificação. No máximo 1
 9. Evidência: `test-it` em `.tests/`, `record-it` em `.recordings/`, `stress-it` em `.stress/`. O arquivo de tarefas do `auto-task` continua em `.tasks/`.
 10. Ao adicionar, remover ou renomear um skill, atualize na mesma mudança a tabela de skills e a lista de invocação no `README.md`.
 11. Versão, changelog e tag saem do Changesets, em `.changeset/`. O `/create-release` planeja os commits, escreve as notas, commita no padrão do `/git-plan` e cria a tag. Não publica pacote. Não crie arquivo de version bump.
+12. Depois da tag, instale as skills deste repositório com o CLI, telemetria ligada, para elas aparecerem na página. Apague essa instalação se ela só serviu para a publicação.
