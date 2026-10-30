@@ -2,6 +2,7 @@
 name: create-agents-md
 description: Writes or updates the short harness agent guide for the open project, capped at 15 concepts. Use when the user names /create-agents-md, or when the user states a request or decision that changes how the agent should work in this project.
 ---
+![create-agents-md](thumb.png)
 
 ## User language
 

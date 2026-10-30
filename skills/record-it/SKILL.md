@@ -3,6 +3,7 @@ name: record-it
 description: Records a UI flow with the recorder the current harness exposes, into .recordings/NNN-slug/ (report.md plus a video file) on the feature branch that owns the work. Pushes that folder and never merges .recordings/ into main. Use when the user names record-it, /record-it, wants video evidence of a flow, or names /test-it together with recording.
 disable-model-invocation: true
 ---
+![record-it](thumb.png)
 
 ## User language
 

@@ -2,6 +2,7 @@
 name: create-dx
 description: Organizes the open project so it is easier to read, trace, maintain, and scale. Use when the user names /create-dx, or when another skill or the start of work finds no organization record yet. Automatic mode detects and recommends. Manual mode asks the user to choose an option, then writes only that option's artifact.
 ---
+![create-dx](thumb.png)
 
 ## User language
 

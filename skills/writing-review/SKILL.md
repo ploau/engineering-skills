@@ -3,6 +3,7 @@ name: writing-review
 description: Reviews or rewrites technical prose in the language of that prose. Portuguese text keeps one period per idea, with mechanism, limit, and exception in the same sentence. English text may close each function with a period. Also cuts empty openings, parenthetical restatement, slash or dash restatement, and contrast that denies a thing before affirming it. Use when the user says /writing-review or asks to fix choppy technical writing.
 disable-model-invocation: true
 ---
+![writing-review](thumb.png)
 
 ## User language
 

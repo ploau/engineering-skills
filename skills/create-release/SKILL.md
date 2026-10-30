@@ -3,6 +3,7 @@ name: create-release
 description: Plans the release commits, writes Changesets notes, applies them to the changelog and version, creates the git tag, and pushes that commit and tag. Use when the user names /create-release or asks to release this repo. Does not publish a package.
 disable-model-invocation: true
 ---
+![create-release](thumb.png)
 
 ## User language
 

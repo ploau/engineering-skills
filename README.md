@@ -1,3 +1,5 @@
+![engineering-skills](thumb.png)
+
 # engineering-skills
 
 Harness-agnostic skills for the project that is open and the harness that is already running. Skill files describe the outcome and the evidence.

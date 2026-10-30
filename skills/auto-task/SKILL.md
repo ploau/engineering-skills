@@ -2,6 +2,7 @@
 name: auto-task
 description: Turns incoming requests into durable, independently scoped implementation tasks and keeps working until every queued task is complete. Persist each unit under .tasks/ on the feature branch that owns the work, push that branch, and never merge .tasks/ into main. Use when a user asks to identify, create, split, plan, or implement tasks from one or more inputs, especially when the work needs clarification, alignment with the project's own content model, an implementation location, or asset dependencies. Do not stop after the first task.
 ---
+![auto-task](thumb.png)
 
 ## User language
 

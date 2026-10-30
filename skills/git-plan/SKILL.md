@@ -3,6 +3,7 @@ name: git-plan
 description: Plans the branch, commits, and exclusions for the current change. A release version bump is one commit in that plan and is carried out by /create-release. Use when the user names /git-plan or asks for a commit plan. Does not commit or push unless the user asks.
 disable-model-invocation: true
 ---
+![git-plan](thumb.png)
 
 ## User language
 

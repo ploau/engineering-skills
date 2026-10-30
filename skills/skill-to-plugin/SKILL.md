@@ -3,6 +3,7 @@ name: skill-to-plugin
 description: Generates a harness plugin from a skill using the local templates in this repo. Use when the user names /skill-to-plugin or asks to package a skill as a plugin for a coding-agent harness.
 disable-model-invocation: true
 ---
+![skill-to-plugin](thumb.png)
 
 ## User language
 

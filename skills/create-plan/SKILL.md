@@ -3,6 +3,7 @@ name: create-plan
 description: Interviews the user and writes an implementation plan for the current request. Use when the user names /create-plan or asks for an implementation plan of this feature.
 disable-model-invocation: true
 ---
+![create-plan](thumb.png)
 
 ## User language
 

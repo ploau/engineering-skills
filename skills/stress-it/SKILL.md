@@ -3,6 +3,7 @@ name: stress-it
 description: Stress-tests the current project's UI in the browser the current harness exposes, then mines the console and the newest project debug or session logs for render loops and runtime errors. Writes findings only and does not patch product source during the battery. Use when the user names stress-it, /stress-it, a stress test, a render loop, or maximum update depth.
 disable-model-invocation: true
 ---
+![stress-it](thumb.png)
 
 ## User language
 

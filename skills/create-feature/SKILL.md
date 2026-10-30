@@ -3,6 +3,7 @@ name: create-feature
 description: Builds the feature the user named in the open project, after the project organization step. Use when the user names /create-feature or asks to create a feature.
 disable-model-invocation: true
 ---
+![create-feature](thumb.png)
 
 ## User language
 

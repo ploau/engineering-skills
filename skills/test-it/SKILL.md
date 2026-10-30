@@ -3,6 +3,7 @@ name: test-it
 description: Creates and executes a real UI test for the current task in the browser the current harness exposes. Persists results under .tests/ on the feature branch that owns the work, pushes that folder, and never merges .tests/ into main. Use when the user names test-it, /test-it, asks to test a task in a browser, or wants evidence that a requested flow works.
 disable-model-invocation: true
 ---
+![test-it](thumb.png)
 
 ## User language
 

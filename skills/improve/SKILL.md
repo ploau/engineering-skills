@@ -2,6 +2,7 @@
 name: improve
 description: One-pass analysis of the current plan's feature diff. Discovers typecheck, test, build, and host commands from the open project, runs that evidence battery, then applies every no-risk go polish in the same turn. Dangerous items stay opt-in. Use when the user names /improve or asks for a change-set review of this plan before /test-it.
 ---
+![improve](thumb.png)
 
 ## User language
 
