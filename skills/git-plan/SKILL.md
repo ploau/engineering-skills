@@ -1,6 +1,6 @@
 ---
 name: git-plan
-description: Plans the branch, commits, and exclusions for the current change. Use when the user names /git-plan or asks for a commit plan. Does not commit or push unless the user asks.
+description: Plans the branch, commits, and exclusions for the current change. A release version bump is one commit in that plan and is carried out by /create-release. Use when the user names /git-plan or asks for a commit plan. Does not commit or push unless the user asks.
 disable-model-invocation: true
 ---
 
@@ -35,3 +35,9 @@ Name the paths that stay out of these commits: secrets, unrelated dirty files, a
 Before any commit the user later asks for, confirm the scope matches the diff, the type matches the change, the title is technical English within 72 characters, the order follows how the change was built, and each domain is its own commit.
 
 Write the plan in chat unless the project already has a place for it. Do not invent a path.
+
+## Release
+
+When the change includes a release, list one commit for the version bump: type `chore`, scope `release`, title `chore(release): version X.Y.Z`. That commit stays on the branch being released. Do not propose a feature branch for it.
+
+Name what stays out of that commit, same as any other domain. Do not apply `.changeset/` notes, create the tag, or push the release from this skill. Follow [create-release](../create-release/SKILL.md) for those steps when the user invokes `/create-release`.

@@ -4,7 +4,7 @@
     {
       "title": "Plan",
       "description": "Organize the project and write the plan before the change.",
-      "skills": ["create-dx", "create-feature", "create-plan", "git-plan"]
+      "skills": ["create-dx", "create-feature", "create-plan", "git-plan", "create-release"]
     },
     {
       "title": "Ship",
