@@ -1,29 +1,14 @@
 # engineering-skills
 
-Harness-agnostic skills for the project that is open and the harness that is already running. Skill files describe the outcome and the evidence. They do not require a named agent, model, browser, or product stack.
+Harness-agnostic skills for the project that is open and the harness that is already running. Skill files describe the outcome and the evidence.
 
-The file map is [templates/README.md](templates/README.md).
-
-## Layout
-
-```text
-skills/<name>/SKILL.md
-templates/plugin/          filled manifests
-templates/harness/         one note per harness
-scripts/skill-to-plugin.mjs
-```
-
-`package.json` `name` is `engineering-skills`. Per-harness manifests use the same name and point at `skills/`.
-
-Version and release notes use Changesets. Add a note with `npm run changeset`, then run `npm run version` to update `CHANGELOG.md` and `package.json` `version`. The license is MIT.
 
 Install the skills from this repo:
 
 ```bash
 npx skills add ploau/engineering-skills
+npx skills add ploau/engineering-skills --skill <skill-name>
 ```
-
-`skills.sh.json` only groups the page at [skills.sh/ploau/engineering-skills](https://skills.sh/ploau/engineering-skills). The page appears after an install with telemetry enabled.
 
 ## Skills
 
@@ -42,13 +27,3 @@ npx skills add ploau/engineering-skills
 | `skills/stress-it/` | `/stress-it` | Stress-tests the current project's UI in the browser the current harness exposes, then mines the console and the newest project debug or session logs for render loops and runtime errors. |
 | `skills/test-it/` | `/test-it` | Creates and executes a real UI test for the current task in the browser the current harness exposes. |
 | `skills/writing-review/` | `/writing-review` | Reviews or rewrites technical prose in the language of that prose. |
-
-Chat output follows the user's language. The instruction files stay in English, except the labeled Portuguese and English sections in `writing-review`.
-
-## Package a skill
-
-```bash
-node scripts/skill-to-plugin.mjs --skill skills/test-it --out /path/to/plugin
-```
-
-Harness notes that have no directory of their own say which files in `templates/harness/` to copy. Do not add a manifest directory that those notes do not list.
