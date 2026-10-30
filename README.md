@@ -17,15 +17,20 @@ scripts/skill-to-plugin.mjs
 
 ## Skills
 
-| Skill | Invocation |
-| --- | --- |
-| auto-task | plan and finish every task under `.tasks/` on the feature branch |
-| improve | evidence battery on this plan, then apply no-risk polish |
-| test-it | `/test-it` exercises the UI in the harness browser |
-| record-it | `/record-it` records with the harness recorder |
-| stress-it | `/stress-it` provokes UI failures and writes `.stress/` |
-| writing-review | `/writing-review` reviews prose in the language of the text |
-| skill-to-plugin | `/skill-to-plugin` builds a plugin from a skill |
+| Folder | Invocation | Description |
+| --- | --- | --- |
+| `skills/auto-task/` | `/auto-task` | Turns incoming requests into durable, independently scoped implementation tasks and keeps working until every queued task is complete. |
+| `skills/create-agents-md/` | `/create-agents-md` | Writes or updates the short harness agent guide for the open project, capped at 15 concepts. |
+| `skills/create-dx/` | `/create-dx` | Organizes the open project so it is easier to read, trace, maintain, and scale. |
+| `skills/create-feature/` | `/create-feature` | Builds the feature the user named in the open project, after the project organization step. |
+| `skills/create-plan/` | `/create-plan` | Interviews the user and writes an implementation plan for the current request. |
+| `skills/git-plan/` | `/git-plan` | Plans the branch, commits, and exclusions for the current change. |
+| `skills/improve/` | `/improve` | One-pass analysis of the current plan's feature diff. |
+| `skills/record-it/` | `/record-it` | Records a UI flow with the recorder the current harness exposes, into `.recordings/NNN-slug/` (`report.md` plus a video file) on the feature branch that owns the work. |
+| `skills/skill-to-plugin/` | `/skill-to-plugin` | Generates a harness plugin from a skill using the local templates in this repo. |
+| `skills/stress-it/` | `/stress-it` | Stress-tests the current project's UI in the browser the current harness exposes, then mines the console and the newest project debug or session logs for render loops and runtime errors. |
+| `skills/test-it/` | `/test-it` | Creates and executes a real UI test for the current task in the browser the current harness exposes. |
+| `skills/writing-review/` | `/writing-review` | Reviews or rewrites technical prose in the language of that prose. |
 
 Chat output follows the user's language. The instruction files stay in English, except the labeled Portuguese and English sections in `writing-review`.
 

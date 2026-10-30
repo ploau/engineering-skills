@@ -11,3 +11,4 @@ Guia curto deste repositório. Não é uma segunda especificação. No máximo 1
 7. Não reintroduza harnesses removidos, OpenCode, hooks ou plugin-bootstrap.
 8. O gerador copia só o que existe em `templates/harness/` e `templates/plugin/`. Não invente outro layout de manifesto.
 9. Evidência: `test-it` em `.tests/`, `record-it` em `.recordings/`, `stress-it` em `.stress/`. O arquivo de tarefas do `auto-task` continua em `.tasks/`.
+10. Ao adicionar, remover ou renomear um skill, atualize na mesma mudança a tabela de skills e a lista de invocação no `README.md`.
