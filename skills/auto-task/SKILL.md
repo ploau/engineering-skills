@@ -173,7 +173,7 @@ Use a three-digit prefix (`001`, `002`, …) from the next free number in `.task
 
 ## Branch-local archive (required)
 
-`.tasks/` is the durable record of work **on the branch where that work happens**. It is **not** product source. Never land `.tasks/`, `.tests/`, `.recordings/`, or repo-root `BACKLOG.md` on `main` / `master`.
+`.tasks/` is the durable record of work **on the branch where that work happens**. It is **not** product source. Never land `.tasks/`, `.tests/`, or `.recordings/` on `main` / `master`.
 
 ### Which branch
 
@@ -198,9 +198,9 @@ If the user has not asked to commit product code, still commit **task records** 
 When landing the feature (squash, merge, `/create-release`, PR):
 
 - Stage **product** paths only.
-- Do **not** `git add .tasks/`, `.tests/`, `.recordings/`, or `BACKLOG.md` onto `main`.
-- If a squash/index accidentally includes them, `git restore --staged BACKLOG.md .tasks/ .tests/ .recordings/` before the main commit.
-- After squash-merge to `main`, **delete the local feature branch only**. Keep `origin/<feature-branch>` so `.tasks/` and `BACKLOG.md` remain inspectable.
+- Do **not** `git add .tasks/`, `.tests/`, or `.recordings/` onto `main`.
+- If a squash/index accidentally includes them, `git restore --staged .tasks/ .tests/ .recordings/` before the main commit.
+- After squash-merge to `main`, **delete the local feature branch only**. Keep `origin/<feature-branch>` so `.tasks/` remains inspectable.
 
 `main` may show untracked `.tasks/` from a leftover working tree. Leave them untracked or check them out on the feature branch (`git checkout <branch> -- .tasks/`). Never `git add .tasks/` on `main`.
 

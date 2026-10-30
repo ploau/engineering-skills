@@ -16,4 +16,4 @@ The filler is `node scripts/skill-to-plugin.mjs`. Tokens are `{{pluginName}}`, `
 
 ## Shared rules
 
-Version fields are listed in `templates/plugin/.version-bump.json`.
+`{{version}}` comes from the root `package.json`. Changesets writes `CHANGELOG.md` and bumps that version. Do not keep a separate version list.

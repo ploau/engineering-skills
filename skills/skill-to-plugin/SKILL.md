@@ -33,9 +33,10 @@ node scripts/skill-to-plugin.mjs \
   --skill /absolute/path/to/skill \
   --out /absolute/path/to/plugin \
   --name plugin-name \
-  --description "Short description." \
-  --version 0.1.0
+  --description "Short description."
 ```
+
+`--version` is optional. When it is omitted, the script uses `version` from the root `package.json`. Changesets bumps that field and writes `CHANGELOG.md`.
 
 Add `--harness <name>` to limit the copy. Repeat the flag for more than one.
 

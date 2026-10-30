@@ -4,5 +4,12 @@
   "description": "Harness-agnostic engineering skills. Package them for the harness that is actually in use.",
   "keywords": [
     "skills"
-  ]
+  ],
+  "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
+  }
 }

@@ -1,0 +1,20 @@
+{
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Plan",
+      "description": "Organize the project and write the plan before the change.",
+      "skills": ["create-dx", "create-feature", "create-plan", "git-plan"]
+    },
+    {
+      "title": "Ship",
+      "description": "Turn a request into tasks, a review, a plugin, or the agent guide.",
+      "skills": ["auto-task", "improve", "skill-to-plugin", "create-agents-md"]
+    },
+    {
+      "title": "Verify",
+      "description": "Test, record, stress, and review the prose.",
+      "skills": ["test-it", "record-it", "stress-it", "writing-review"]
+    }
+  ]
+}

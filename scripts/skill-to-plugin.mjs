@@ -20,7 +20,7 @@ function usage() {
 Options:
   --name NAME            plugin name (default: skill frontmatter, else directory)
   --description TEXT     plugin description
-  --version SEMVER       default 0.1.0
+  --version SEMVER       default: version in package.json
   --skill DIR            copy this skill directory into out/skills/<name>/
   --skills-dir DIR       scan this directory for SKILL.md folders
   --manifests-only       write manifests only; do not copy skills
@@ -33,7 +33,7 @@ function parseArgs(argv) {
     out: "",
     name: "",
     description: "",
-    version: "0.1.0",
+    version: "",
     skill: "",
     skillsDir: "",
     manifestsOnly: false,
@@ -65,7 +65,18 @@ function parseArgs(argv) {
     }
   }
   if (!args.out) throw new Error("pass --out");
+  if (!args.version) args.version = readRepoVersion();
   return args;
+}
+
+function readRepoVersion() {
+  try {
+    const pkg = JSON.parse(fs.readFileSync(path.join(repoRoot, "package.json"), "utf8"));
+    if (typeof pkg.version === "string" && pkg.version) return pkg.version;
+  } catch {
+    // The generator still runs when package.json cannot be read.
+  }
+  return "0.1.0";
 }
 
 function readFrontmatter(skillDir) {

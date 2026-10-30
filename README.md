@@ -15,6 +15,16 @@ scripts/skill-to-plugin.mjs
 
 `package.json` `name` is `engineering-skills`. Per-harness manifests use the same name and point at `skills/`.
 
+Version and release notes use Changesets. Add a note with `npm run changeset`, then run `npm run version` to update `CHANGELOG.md` and `package.json` `version`. The license is MIT.
+
+Install the skills from this repo:
+
+```bash
+npx skills add ploau/engineering-skills
+```
+
+`skills.sh.json` only groups the page at [skills.sh/ploau/engineering-skills](https://skills.sh/ploau/engineering-skills). The page appears after an install with telemetry enabled.
+
 ## Skills
 
 | Folder | Invocation | Description |
